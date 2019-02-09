@@ -1,0 +1,25 @@
+<div>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <label>
+    PID:
+    <input type="text" formControlName="pid">
+  </label>
+  <br>
+  <label>
+    Product Name:
+    <input type="text" formControlName="name">
+  </label>
+  <br>
+  <label>
+    Product Price:
+    <input type="text" formControlName="price">
+  </label>
+  <br>
+  <label>
+    Product Image:
+    <input type="file" #ProductImage formControlName="image">
+  </label>
+  <br>
+  <button>Save</button>
+  </form>
+</div>
